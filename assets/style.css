@@ -163,10 +163,9 @@ body {
 /* START Footer */
 #share {
   display: none;
-  position: absolute;
-  bottom: 0px;
-  right: 40%;
-  left: 40%;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 #shareButtons {
@@ -320,17 +319,5 @@ body {
     font-size: 6vw;
     margin-top: 2vw;
   }
-
-  #share {
-    display: none
-    margin: 8px;
-    top: 0px;
-    left: 0px;
-    position: relative;
-  }
-
-  #shareButtons {
-    display: block;
-    justify-content: center;
-  }
+  
 }
