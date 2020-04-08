@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'eightitRegular';
+  src: url(fonts/8bit_regular.ttf);
+}
+
+/* remove dotted border after clicking button on firefox */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: rgb(28, 30, 31);
+}
+
+.container {
+  text-align: center;
+  font-family: eightitRegular;
+  color: #ffffff;
+  height: 100%;
+}
+
+/* START Logo related*/
+.logoRegular {
+  background: url("images/python_eyes_middle.png") no-repeat;
+  height: 300px;
+  background-position: center;
+}
+
+.logoHiss {
+  background: url("images/python_logo_middle_no_tongue.png") no-repeat;
+  height: 300px;
+  background-position: center;
+}
+
+/* END Logo related*/
+/*START Text related*/
+.ninetySeconds {
+  position: relative;
+  bottom: 0px;
+  font-size: 3vw;
+  margin-block-start: 1px;
+  margin-block-end: 1vw;
+  margin-inline-start: 1vw;
+  margin-inline-end: 0px;
+}
+
+.veryEasy {
+  font-size: 2vw;
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.notHard {
+  font-size: 1vw;
+  margin-block-start: 0.8vw;
+  margin-block-end: 0.4vw;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.learning {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 15px 0px;
+}
+
+.typewriterText {
+  font-size: 1.5vw;
+  margin-top: 0.5vw;
+}
+
+/* top right bottom left */
+#mainText {
+  border-bottom: 4px dashed #808000;
+  border-top: 4px dashed #808000;
+}
+
+/*END Text Related*/
+/* START button_pixel_pixel */
+.buttonPixel {
+  font-size: 1px;
+  height: auto;
+  position: relative;
+  outline: none;
+  font-family: eightitRegular;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buttonPixel {
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  outline: none;
+}
+
+.buttonPixel::before {
+  content: "";
+  display: block;
+  outline: none;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+  right: -10px;
+  background: #808000;
+  z-index: -1;
+}
+
+.buttonPixel::after {
+  content: "";
+  display: block;
+  outline: none;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: #808000;
+  z-index: -1;
+}
+
+.buttonPixel {
+  padding: 10px 10px;
+  position: relative;
+  background: #808000;
+  outline: none;
+  width: auto;
+  z-index: 2;
+}
+
+.buttonDiv {
+  display: inline-block;
+  width: 100%;
+}
+
+#letsGo {
+  margin-top: 2%;
+}
+
+/* END button_pixel_pixel */
+/* START Footer */
+#share {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  right: 40%;
+  left: 40%;
+}
+
+#shareButtons {
+  display: flex;
+  justify-content: center;
+}
+
+#learningSec {
+  display: flex;
+}
+
+/* END Footer */
+/* START Author */
+.author {
+  background: url("images/github.png") no-repeat;
+  height: 42px;
+  width: 32px;
+  background-size: 100% 100%;
+  position: absolute;
+  margin: 16px;
+  top: 0px;
+  right: 0px;
+}
+
+.soundOn {
+  background: url("images/sound.png") no-repeat;
+  height: 32px;
+  width: 32px;
+  background-size: 100% 100%;
+  position: absolute;
+  margin: 16px;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+}
+
+.typed-cursor {
+  opacity: 1;
+  color: green;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* END Author */
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .ninetySeconds {
+    font-size: 6vw;
+    align-self: flex-end;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+  }
+
+  .veryEasy {
+    font-size: 5vw;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .notHard {
+    font-size: 3vw;
+    margin-block-start: 0.8vw;
+    margin-block-end: 0.4vw;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .learning {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 15px 0px 15px 0px;
+  }
+
+  #letsGo {
+    margin-top: 8%;
+  }
+
+  .author {
+    background: url("images/github.png") no-repeat;
+    height: 30px;
+    width: 22px;
+    background-size: 100% 100%;
+    position: absolute;
+    margin: 8px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .soundOn {
+    background: url("images/sound.png") no-repeat;
+    height: 22px;
+    width: 22px;
+    background-size: 100% 100%;
+    position: absolute;
+    margin: 8px;
+    bottom: 0px;
+    left: 0px;
+    display: none
+  }
+
+  .typewriterText {
+    font-size: 6vw;
+    margin-top: 2vw;
+  }
+
+  #share {
+    display: none
+    margin: 8px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+  }
+
+  #shareButtons {
+    display: block;
+    justify-content: center;
+  }
+}
